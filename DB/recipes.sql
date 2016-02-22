@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2016 at 06:39 AM
+-- Generation Time: Feb 21, 2016 at 01:10 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -40,12 +40,19 @@ CREATE TABLE IF NOT EXISTS `recipes` (
 -- Dumping data for table `recipes`
 --
 
-INSERT INTO `recipes` ('('black forest cake', 'cocoa powder', 'Bakes', 'http://www.vegrecipesofindia.com/eggless-black-forest-cake-recipe/', NULL, 35.00, 'V'),
-('hazel nut brownie', 'hazel nut', 'Bakes', 'http://www.tasteofhome.com/recipes/hazelnut-brownies', NULL,30.00, 'N'),
-('hazel nut brownie', 'egg', 'Bakes', 'http://www.tasteofhome.com/recipes/hazelnut-brownies', NULL,30.00, 'N'),
-('choco chip cookies', 'choco chips', 'Bakes', 'http://allrecipes.com/recipe/10813/best-chocolate-chip-cookies/', NULL,30.00, 'V'),
-('dry fruit laddu', 'cashewnut', 'indian savouries', 'http://www.vegrecipesofindia.com/dry-fruits-ladoo-recipe/', NULL,20.00, 'V'),
-('dry fruit laddu', 'fig', 'indian savouries', 'http://www.vegrecipesofindia.com/dry-fruits-ladoo-recipe/', NULL,20.00, 'V');
+INSERT INTO `recipes` (`rec_name`, `ingre`, `cui_name`, `instURL`, `videoURL`, `duration`, `type`) VALUES
+('black forest cake', 'cocoa powder', 'Bakes', 'http://www.vegrecipesofindia.com/eggless-black-forest-cake-recipe/', NULL, 35.00, 'V'),
+('black forest cake', 'maida', 'Bakes', 'http://www.vegrecipesofindia.com/eggless-black-forest-cake-recipe/', NULL, 35.00, 'V'),
+('chicken biriyani ', 'chicken', 'South India', 'http://www.indianfoodforever.com/non-veg/chicken/chicken-biryani.html', NULL, 45.00, 'N'),
+('choco chip cookies', 'choco chips', 'Bakes', 'http://allrecipes.com/recipe/10813/best-chocolate-chip-cookies/', NULL, 30.00, 'V'),
+('Choco lava cake', 'dark chocolate', 'Bakes', 'http://food.ndtv.com/recipe-chocolate-lava-cake-341428', NULL, 30.00, 'N'),
+('Choco lava cake', 'egg', 'Bakes', 'http://food.ndtv.com/recipe-chocolate-lava-cake-341428', NULL, 30.00, 'N'),
+('Choco lava cake', 'maida', 'Bakes', 'http://food.ndtv.com/recipe-chocolate-lava-cake-341428', NULL, 30.00, 'V'),
+('dry fruit laddu', 'cashewnut', 'indian savouries', 'http://www.vegrecipesofindia.com/dry-fruits-ladoo-recipe/', NULL, 20.00, 'V'),
+('dry fruit laddu', 'raisins', 'indian savouries', 'http://www.vegrecipesofindia.com/dry-fruits-ladoo-recipe/', NULL, 20.00, 'V'),
+('hazel nut brownie', 'egg', 'Bakes', 'http://www.tasteofhome.com/recipes/hazelnut-brownies', NULL, 30.00, 'N'),
+('hazel nut brownie', 'hazel nut', 'Bakes', 'http://www.tasteofhome.com/recipes/hazelnut-brownies', NULL, 30.00, 'N'),
+('hazel nut brownie', 'maida', 'Bakes', 'http://www.tasteofhome.com/recipes/hazelnut-brownies', NULL, 30.00, 'N');
 
 --
 -- Indexes for dumped tables
