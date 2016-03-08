@@ -22,8 +22,9 @@
 		));
 		$result = curl_exec($ch);
 		$jobj = json_decode($result, true);
-		echo $jobj["location"]["longitude"];
-		echo "<br>". $jobj["location"]["latitude"];
+		echo $jobj["name"];
+		echo "<br>"."Latitude: ".$jobj["location"]["latitude"];
+		echo "<br>"."Longitude: ". $jobj["location"]["longitude"];
 		curl_close($ch);
 	}
 ?>
